@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript fan on off effect</title>
+    <style> 
+           div[data-anil="myfanbox"]{
+            border:1px dashed #000;
+           }
+
+       .fanbox{
+        width: 300px;
+        height: 300px;
+        background-image: url(./download9.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:100px auto;
+        animation-name: fan;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        
+}
+         @keyframes fan {
+            0%{
+                transform: rotatez(0deg);
+            }
+            100%{
+                transform: rotatez(359deg);
+            }
+            
+         }
+         
+        </style>
+        <script>
+            function stopfan(s){
+                alert("ok1");
+            }
+
+            function startfan(speed){
+                if(speed == 1){
+                    alert('1');
+                }else if(speed == 2){
+                    alert('2');
+
+                    document.queryselector('[data-Damini="myfanbox"]').style.animationplaystate = 'running';
+                    document.queryselector('[data-Damini="myfanbox"]').style.animationDuration = '0.5s';
+                }else{
+                   // alert('3');
+                   //object.member
+                   //object.method()
+                    document.getElementById('fanbox').style.animationplaystate='running';
+                    document.getElementById('fanboxx').style.animationDuration='0.1s';
+                }
+            }
+        </Script>
 </head>
 <body>  
-    
+  
+    <div class="fanbox" id="fanboxx" data-Damini="myfanbox">
+    </div>
+        <div style="text-align: center;">
+         <button onclick="stopfan('ok1')" >stop</button>
+         <button onclick="startfan(1)">1</button>
+         <button onclick="startfan(2)">2</button>
+         <button onclick="startfan(3)">3</button>
+
+           
+
+        </div>
+        <script>
+
+            </script>
 </body> 
 </html>
