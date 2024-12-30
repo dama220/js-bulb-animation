@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>create a web page usin pure js</title>
+            <style>
+
+                </style>
+                <script>
+
+                </script>    
+        </head>
+        <body id="d_body">
+            <script>
+              //1. create a header element/tag using js
+            var h = document.createElement('header');
+            h.innerHTML = 'Header';
+            console.log(h);
+            //2. now tell the js to place this header element inside body tag
+            document.getElementById('d_body').appendChild(h);
+
+            document.querySelector('Header').setAttribute('class' ,'a_header');
+            //object member
+            document.body.style.margin = '0px';
+
+           var x = document.getElementsByClassName('a_header');
+           //console.log(x[0]);
+        x[0].style.width = '100%';
+        x[0].style.height = '150px';
+        x[0].style.border = '5px solid #ddd';
+
+        var x = document.getElementsByTagName('header');
+        console.log(x[0]);
+        x[0].style.color = 'green';
+        x[0].style.fontsize = '4em';
+        x[0].style.textAlign = 'center';
+        x[0].style.lineheight = '150px';
+
+        let f = document.createElement('footer');
+        let n = document.createElement('nav');
+
+        console.log(f);
+
+
+
+        document.body.appendChild(f);
+        
+
+
+                </script>
+
+        </body>
+</html>
