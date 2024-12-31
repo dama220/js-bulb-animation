@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>traversing up/down</title>
+    </head>
+    <body>
+        <div class="gp">
+            grand parent
+
+            <div class="p">
+                parent
+                
+                <div class="c">
+                    child
+
+                    <div class="gc">
+                        grand child
+
+                        </div>
+
+                        </div>
+
+                    </div>
+            </div>
+      <script>
+             gc = document.querySelector('div.gc');
+             console.log(gc);
+             gc.closest('div.gp').style.border = '1px solid blue';
+             gc.closest('.p').style.border = '1px solid green';
+             gc.closest('.c').style.border = '1px solid purple';
+             
+             //js hoisting
+             var gc;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css form design</title>
+            <style>
+                  body{
+                   
+                    margin: 0; /* Removes default margin to ensure the image starts from the top */
+      background-repeat: no-repeat;
+      background-image: url("./df.jpg");
+      background-position: top center;
+      background-size: 200px;
+        
+
+                  }
+
+                 .myform{
+                    width: 100px;
+                    height: 120px; 
+                    margin: 150px auto;
+                    text-align: center; 
+                    border-radius: 10px;                    
+                 }
+                    
+                      .myform > div > input{
+                        
+                        display: block;
+                        width:375px;
+                        height:38px;
+                        margin:7px auto;
+                      }
+
+                      .tnc{
+                        text-align: center;
+                        color: white;
+                        border-radius: 2em;
+                      }
+
+                      .box > input:focus{
+                        border:none !important;
+                        
+                      }
+
+                      input[type="submit"]{
+                        width: 100px;
+                        height:40px;
+                        border-radius: 3em;
+                        float:center;
+                        background-image: -webkit-linear-gradient(top,blue,blue);
+                        color:white;
+                      }
+        </style>
+    </head>
+    <body>
+        
+        <form class="myform">
+
+          <div class="cacc">Please Sign in</div>
+          <div class="box">
+            <input type="email" name="email" value="" placeholder="emailaddress">
+            <input type="password" name="Password" value="" placeholder="password">
+          <div class="tnc"><input type="checkbox" name="tnc" value="Remeber">Remeber me</div>
+          </div>
+          <input type="submit" name="submit" value="signin">
+
+        </form>
+    </body>
+</html>
